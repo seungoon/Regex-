@@ -1,0 +1,3 @@
+１．置換処理
+　Dim reg As New System.Text.RegularExpressions.Regex("^[ ]*SELECT", RegexOptions.IgnoreCase)
+　Dim abc as String = New String() {reg.Replace("対象文字列", "SELECT /*+ optimizer_features_enable('10.2.0.5') */ ")}
